@@ -14,7 +14,7 @@ public class CreatorTools implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LogManager.getLogger("creatortools");
-	public static final Item ACORN = new Item(new Item.Settings().group(ItemGroup.MISC));
+	public static final Item ACORN = new AcornItem(new Item.Settings().group(ItemGroup.MISC));
 
 	@Override
 	public void onInitialize() {
