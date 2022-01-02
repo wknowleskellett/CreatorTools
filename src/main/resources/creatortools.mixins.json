@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "CreatorToolsMixin"
+    "TitleScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
