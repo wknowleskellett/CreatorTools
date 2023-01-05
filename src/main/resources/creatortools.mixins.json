@@ -4,9 +4,12 @@
   "package": "dev.williamknowleskellett.creatortools.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "RegistryInvoker",
+    "RegistryMixin"
   ],
   "client": [
-    "TitleScreenMixin"
+  ],
+  "server": [
   ],
   "injectors": {
     "defaultRequire": 1

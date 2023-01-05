@@ -10,9 +10,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CreatorTools implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LogManager.getLogger("creatortools");
 	public static final Item ACORN = new AcornItem(new Item.Settings().group(ItemGroup.MISC));
 
@@ -22,8 +19,7 @@ public class CreatorTools implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		// LOGGER.info("Hello Fabric world!");
-
 		Registry.register(Registry.ITEM, new Identifier("creatortools", "acorn"), ACORN);
+		// RegistryInvoker.invokeCreate(null, null, null, null);
 	}
 }
